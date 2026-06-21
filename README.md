@@ -95,7 +95,7 @@ https://api.github.com/users/eherca0502/repos?sort=updated
   Fundación Carlos Slim
 
 * Desarrollo de Aplicaciones Móviles
-  Google · 2022
+  Google 
 
 * Introducción a la Ciencia de Datos
   Santander Academy
@@ -109,7 +109,7 @@ https://api.github.com/users/eherca0502/repos?sort=updated
 ## Estructura del proyecto
 
 ```text
-portafolio-eduardo/
+portafolio1/
 │
 ├── index.html
 ├── style.css
