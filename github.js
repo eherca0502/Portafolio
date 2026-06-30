@@ -66,7 +66,7 @@ async function fetchGitHubProjects() {
                             class="github-link">
 
                             <i class="fa-brands fa-github"></i>
-                            Ver código
+                         <span data-key="verCodigo">Ver código</span>
                         </a>
 
                     </div>
@@ -75,6 +75,7 @@ async function fetchGitHubProjects() {
 
             </article>
         `).join("");
+        setLanguage(currentLang);
 
     } catch (error) {
         console.error(error);

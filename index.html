@@ -33,53 +33,67 @@
 </div>
 
 
-        <nav>
+      <nav>
 
-            <a href="#inicio">
-                <i class="fa-solid fa-house"></i>
-                Inicio
-            </a>
+    <a href="#inicio">
+        <i class="fa-solid fa-house"></i>
+        <span data-key="inicio">Inicio</span>
+    </a>
 
-            <a href="#sobre-mi">
-                <i class="fa-solid fa-user"></i>
-                Sobre Mí
-            </a>
+    <a href="#sobre-mi">
+        <i class="fa-solid fa-user"></i>
+        <span data-key="sobre">Sobre Mi</span>
+    </a>
 
-            <a href="#tecnologias">
-                <i class="fa-solid fa-code"></i>
-                Tecnologías
-            </a>
+    <a href="#tecnologias">
+        <i class="fa-solid fa-code"></i>
+        <span data-key="tecnologias">Tecnologias</span>
+    </a>
 
-            <a href="#cursos">
-                <i class="fa-solid fa-certificate"></i>
-                Cursos
-            </a>
+    <a href="#experiencia">
+        <i class="fa-solid fa-briefcase"></i>
+        <span data-key="experiencia">Experiencia</span>
+    </a>
 
-            <a href="#proyectos">
-                <i class="fa-solid fa-folder-open"></i>
-                Proyectos
-            </a>
+    <a href="#cursos">
+        <i class="fa-solid fa-certificate"></i>
+        <span data-key="cursos">Cursos</span>
+    </a>
 
-            <a href="#github">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a>
+    <a href="#proyectos">
+        <i class="fa-solid fa-folder-open"></i>
+        <span data-key="proyectos">Proyectos</span>
+    </a>
 
-            <a href="#contacto">
-                <i class="fa-solid fa-envelope"></i>
-                Contacto
-            </a>
+    <a href="#github">
+        <i class="fa-brands fa-github"></i>
+        <span data-key="github">GitHub</span>
+    </a>
 
-        </nav>
+    <a href="#contacto">
+        <i class="fa-solid fa-envelope"></i>
+        <span data-key="contacto">Contacto</span>
+    </a>
 
-        <a href="CV/Eduardo.pdf"
-            target="_blank"
-            class="cv-btn">
+</nav>
+    </nav>
 
-            Descargar CV
+<div class="navbar-actions">
 
-        </a>
+ <button id="language-btn" class="language-btn" onclick="toggleLanguage()">
+    ES
+</button>
 
+    <a href="CV/Eduardo.pdf"
+        target="_blank"
+        class="cv-btn"
+        data-key="descargar">
+
+        Descargar CV
+
+    </a>
+
+</div>
     </header>
 
     <main>
@@ -88,7 +102,7 @@
 
             <div class="hero-content">
 
-                <span class="hero-tag">
+                <span class="hero-tag" data-key="disponible">
                     Disponible para nuevos proyectos
                 </span>
 
@@ -97,11 +111,11 @@
                     HERNÁNDEZ
                 </h1>
 
-                <h2>
+                <h2 data-key="ingeniero">
                     Ingeniero Informático
                 </h2>
 
-                <p>
+                <p data-key="descripcion">
                     Transformo ideas en experiencias digitales modernas mediante
                     aplicaciones web, sistemas empresariales y soluciones
                     tecnológicas diseñadas para crecer.
@@ -109,13 +123,13 @@
 
                 <div class="hero-buttons">
 
-                    <a href="#proyectos" class="btn-primary">
+                    <a href="#proyectos" class="btn-primary"data-key="verproyectos">
                         Ver proyectos
                     </a>
 
                     <a href="CV/Eduardo.pdf"
                         target="_blank"
-                        class="btn-secondary">
+                        class="btn-secondary"data-key="descargar">
 
                         Descargar CV
                     </a>
@@ -156,11 +170,11 @@
 
             <div class="section-header">
 
-                <span>Sobre Mí</span>
+                <span data-key="sobre">Sobre Mí</span>
 
-                <h2>
-                    Problem Solver & Developer
-                </h2>
+                <h2 data-key="problem">
+    Resolutor de Problemas y Desarrollador
+</h2>
 
             </div>
 
@@ -169,14 +183,14 @@
                 <div class="about-card">
 
                     <h3>
-                        <i class="fa-solid fa-laptop-code"></i>
-                        Desarrollo Web
-                    </h3>
-
-                    <p>
-                        Desarrollo aplicaciones web modernas, rápidas y escalables
-                        utilizando tecnologías actuales y buenas prácticas.
-                    </p>
+    <i class="fa-solid fa-laptop-code"></i>
+    <span data-key="desarrolloTitulo">Desarrollo Web</span>
+</h3>
+                  <p>
+    <span data-key="desarrolloTexto">
+        Desarrollo aplicaciones web modernas, rápidas y escalables utilizando tecnologías actuales y buenas prácticas.
+    </span>
+</p>
 
                 </div>
 
@@ -184,12 +198,15 @@
 
                     <h3>
                         <i class="fa-solid fa-building"></i>
-                        Sistemas Empresariales
+                          <span data-key="sistemaTitulo">Sistemas Empresariales</span>
+                
                     </h3>
 
                     <p>
+                          <span data-key="sistemasTexto">
                         Diseño soluciones digitales enfocadas en automatizar procesos
                         y optimizar operaciones.
+                        </span>
                     </p>
 
                 </div>
@@ -198,12 +215,14 @@
 
                     <h3>
                         <i class="fa-solid fa-database"></i>
-                        Bases de Datos
+                      <span data-key="baseTitulo">Base de Datos</span>
                     </h3>
 
                     <p>
+                          <span data-key="basesTexto">
                         Estructuras seguras y eficientes para aplicaciones de
                         cualquier tamaño.
+                        </span>
                     </p>
 
                 </div>
@@ -216,11 +235,11 @@
 
             <div class="section-header">
 
-                <span>Tecnologías</span>
+                      <span data-key="tecnologias">Tecnologías</span>
 
-                <h2>
-                    Herramientas que utilizo
-                </h2>
+                <h2 data-key="herramientas">
+            Herramientas que utilizo
+        </h2>
 
             </div>
 
@@ -277,16 +296,162 @@
             </div>
 
         </section>
+       <section class="experience" id="experiencia">
+
+    <div class="section-header">
+
+       <span data-key="experiencia">Experiencia</span>
+
+       <h2 data-key="experienciaTitulo">Experiencia Profesional</h2>
+
+        <p class="experience-description" data-key="experienciaTexto">
+            Experiencia en desarrollo web, soporte técnico e implementación de soluciones
+            empresariales durante prácticas profesionales y residencia.
+        </p>
+
+    </div>
+
+    <div class="experience-grid">
+
+      
+
+        <article class="experience-card">
+
+            <div class="experience-header">
+
+                <div class="experience-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <div>
+
+                    <h3>Residente de Sistemas</h3>
+
+                    <h4>Top Security</h4>
+
+                    <span>2024 - 2025</span>
+
+                </div>
+
+            </div>
+
+            <p class="experience-short">
+                Desarrollo Web • ERP Odoo • Stripe • PHP
+            </p>
+
+           <button class="experience-btn"  data-key="verExperiencia">
+    <i class="fa-solid fa-chevron-down"></i>
+    Ver experiencia
+</button>
+
+            <div class="experience-content">
+
+                <ul>
+
+                   <li data-key="exp1_1">
+    Desarrollo de página web informativa utilizando PHP y MySQL.
+</li>
+
+                  <li data-key="exp1_2">
+    Integración con WhatsApp Business para captación de clientes.
+</li>
+<li data-key="exp1_3">
+    Implementación de plataforma e-commerce conectada con ERP Odoo.
+</li>
+<li data-key="exp1_4">
+    Integración de Stripe para pagos en línea.
+</li>
+<li data-key="exp1_5">
+    Automatización del envío de facturas electrónicas al cliente.
+</li>
+<li data-key="exp1_6">
+    Notificaciones automáticas por correo a la empresa después de cada compra.
+</li>
+
+                    
+
+                </ul>
+
+            </div>
+
+        </article>
+
+      
+
+        <article class="experience-card">
+
+            <div class="experience-header">
+
+                <div class="experience-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <div>
+
+                    <h3>Practicante de Sistemas</h3>
+
+                    <h4>Joyson Safety Systems</h4>
+
+                    <span>2022 - 2023</span>
+
+                </div>
+
+            </div>
+
+            <p class="experience-short">
+                Soporte Técnico • Redes • Hardware
+            </p>
+
+           <button class="experience-btn"  data-key="verExperiencia">
+    <i class="fa-solid fa-chevron-down"></i>
+    Ver experiencia
+</button>
+
+            <div class="experience-content">
+
+                <ul>
+
+                    <li data-key="exp2_1">
+    Atención a usuarios mediante sistema de tickets.
+</li>
+
+                    <li data-key="exp2_2">
+    Instalación y configuración de sistemas operativos.
+</li>
+
+                  <li data-key="exp2_3">
+    Configuración de impresoras y equipos.
+</li>
+
+                  <li data-key="exp2_4">
+    Elaboración de cableado de red.
+</li>
+<li data-key="exp2_5">
+    Cambio de teclados y baterías en equipos portátiles.
+</li>
+<li data-key="exp2_6">
+    Clonación de discos duros para despliegue de sistemas.
+</li>
+
+                </ul>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
 
        <section class="courses" id="cursos">
 
     <div class="section-header">
 
-        <span>Formación</span>
+          <span data-key="formacion">Formación</span>
 
-        <h2>Cursos y Certificaciones</h2>
+       <h2 data-key="cursosTitulo">Cursos y Certificaciones</h2>
 
-        <p class="courses-description">
+        <p class="courses-description"  data-key="cursosTexto">
             Cursos y certificaciones orientadas al desarrollo web, programación,
             análisis de datos y soluciones digitales.
         </p>
@@ -309,7 +474,8 @@
 
             <a href="certificados/Python.pdf"
                 target="_blank"
-                class="certificate-btn">
+                class="certificate-btn"
+                data-key="verCertificado">
 
                 
                 Ver certificado
@@ -332,7 +498,8 @@
 
             <a href="certificados/DiseñadorWeb.pdf"
                 target="_blank"
-                class="certificate-btn">
+                class="certificate-btn"
+                data-key="verCertificado">
 
                 
                 Ver certificado
@@ -355,7 +522,8 @@
 
             <a href="certificados/Desarrollo de Apps Moviles.pdf"
                 target="_blank"
-                class="certificate-btn">
+                class="certificate-btn"
+                data-key="verCertificado">
 
                 
                 Ver certificado
@@ -378,7 +546,8 @@
 
             <a href="certificados/CienciaDatos.pdf"
                 target="_blank"
-                class="certificate-btn">
+                class="certificate-btn"
+                data-key="verCertificado">
 
               
                 Ver certificado
@@ -401,7 +570,8 @@
 
             <a href="certificados/PowerBi.pdf"
                 target="_blank"
-                class="certificate-btn">
+                class="certificate-btn"
+                data-key="verCertificado">
 
                 Ver certificado
 
@@ -423,7 +593,8 @@
 
             <a href="certificados/SegDigital.pdf"
                 target="_blank"
-                class="certificate-btn">
+                class="certificate-btn"
+                data-key="verCertificado">
 
                
                 Ver certificado
@@ -445,7 +616,8 @@
 
     <a href="certificados/IT.pdf"
         target="_blank"
-        class="certificate-btn">
+        class="certificate-btn"
+        data-key="verCertificado">
 
         Ver certificado
 
@@ -467,7 +639,8 @@
 
     <a href="certificados/Copilot.pdf"
         target="_blank"
-        class="certificate-btn">
+        class="certificate-btn"
+        data-key="verCertificado">
 
         Ver certificado
 
@@ -484,11 +657,11 @@
 
             <div class="section-header">
 
-                <span>Portafolio</span>
+                <span data-key="proyectosTitulo">Portafolio</span>
 
-                <h2>
-                    Proyectos Destacados
-                </h2>
+             <h2 data-key="proyectosTitulo">
+    Proyectos Destacados
+</h2>
 
             </div>
 
@@ -504,7 +677,7 @@
 
                         <h3>Cyclonova</h3>
 
-                        <p>
+                        <p  data-key="proyecto1Descripcion">
                             Desarrollo de sitio web corporativo para una empresa real,
                             enfocado en diseño moderno, experiencia de usuario y presencia
                             digital profesional.
@@ -550,10 +723,10 @@
 
                         <h3>Sistema de Restaurante</h3>
 
-                        <p>
-                            Plataforma web para la gestión de pedidos, productos,
-                            clientes y administración del negocio.
+                        <p data-key="proyecto2Descripcion">
+                         Plataforma web para la gestión de pedidos, productos, clientes y administración del negocio.
                         </p>
+                        
 
                         <span class="project-tech">
                             PHP • JavaScript • MySQL
@@ -595,7 +768,7 @@
 
                         <h3>Portafolio Personal</h3>
 
-                        <p>
+                        <p data-key="proyecto3Descripcion">
                             Sitio web responsivo desarrollado para mostrar experiencia
                             profesional, habilidades técnicas y proyectos.
                         </p>
@@ -640,16 +813,16 @@
 
                 <span>GitHub</span>
 
-                <h2>
-                    Más proyectos y prácticas
-                </h2>
+                <h2 data-key="githubTitulo">
+    Más proyectos y prácticas
+</h2>
 
             </div>
 
-            <p class="github-text">
-                Repositorios públicos con proyectos, prácticas y ejercicios
-                desarrollados durante mi formación como Ingeniero Informático.
-            </p>
+            <p class="github-text" data-key="githubTexto">
+    Repositorios públicos con proyectos, prácticas y ejercicios
+    desarrollados durante mi formación como Ingeniero Informático.
+</p>
 
             <div class="projects-grid" id="projects">
 
@@ -665,9 +838,9 @@
 
             <div class="contact-box">
 
-                <h2>
-                    ¿Tienes un proyecto en mente?
-                </h2>
+                <h2 data-key="contactoTitulo">
+    ¿Tienes un proyecto en mente?
+</h2>
 
                 <p>
                     Estoy disponible para colaborar en nuevos proyectos y desarrollar
@@ -730,13 +903,15 @@
 
         </div>
 
-        <p>
-            © 2026 Eduardo Hernández. Todos los derechos reservados.
-        </p>
+        <p data-key="footer">
+    © 2026 Eduardo Hernández. Todos los derechos reservados.
+</p>
 
     </footer>
 
     <script src="github.js"></script>
+    <script src="experiencia.js"></script>
+    <script src="language.js"></script>
 
 </body>
 
